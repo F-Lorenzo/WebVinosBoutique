@@ -1,0 +1,183 @@
+/* -------------------------------------------------------------------------- */
+/*                                   general                                  */
+/* -------------------------------------------------------------------------- */
+
+*{
+    margin: 0px ;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+   /* font-family: 'Roboto', sans-serif;
+    font-family: 'Merienda', cursive;*/
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+#navegador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1920px;
+    height: 80px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#navegador li{
+    height: 80px;
+    width: 384px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: gradiente;
+}
+
+#navegador li:hover{
+    background-color: rgb(174, 209, 243);
+    transition: 800ms;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+
+main{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;  
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         sacar despues de correccion                        */
+/* -------------------------------------------------------------------------- */
+#portada{
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+@keyframes rebotar{
+    0%{
+        transform: scale(1);       
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* -------------------------------------------------------------------------- */
+/*                         sacar despues de correccion                        */
+/* -------------------------------------------------------------------------- */
+h1{
+    font-family: 'Merienda', cursive;
+    position:absolute;
+    top:270px;
+    left: 1000px;
+    font-size: 50px;
+    color: white;
+}
+
+h2{
+    font-family: 'Merienda', cursive;
+    margin: 50px 0px;
+}
+
+#tarjetaConteiner{
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0px 20px;
+    color: white;
+}
+
+#sys{
+    background-image: url("../img/SyS.jpg");
+}
+#blanco{
+    background-image: url("../img/blanco.jpg");
+}
+#tinto{
+    background-image: url("../img/tinto.jpg");
+}
+#espumante{
+    background-image: url("../img/espumante.jpg");
+}
+
+.tarjeta:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+
+#serviciosConteiner{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-around;
+    background-image: url("../img/servicios-background.jpg");
+    background-repeat: no-repeat;
+    width:1920px;
+    height: 500px;
+}
+
+.tarjetaServicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0px 20px;
+    background-color: white;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 209, 243);
+}
+
+#redes{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 300px;
+}
+
+#redes li{
+    margin: 0xp 15px;
+}

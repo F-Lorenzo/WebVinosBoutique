@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\Actividad Media Query"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CODER-HOUSE"
+	}
+}
