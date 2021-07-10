@@ -3,42 +3,44 @@
 /* -------------------------------------------------------------------------- */
 
 *{
-    margin: 0px;
+    margin: 0px ;
     padding: 0px;
     list-style: none;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    text-decoration:none ;
+    color:black;
+   /* font-family: 'Roboto', sans-serif;
+    font-family: 'Merienda', cursive;*/
 }
 
-body{
-    width: 1920px;
-    height: auto;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
+
 #navegador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: auto;
+    justify-content: flex-end;
+    align-items:center;
     height: 80px;
     box-shadow: 1px 1px 5px black;
 }
 
 #navegador li{
-    width: 384px;
     height: 80px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: gradiente;
 }
+
 #navegador li:hover{
-    background-color:#4e4c4c;
-    color: white;
-    transition: 700ms;
+    background-color: rgb(174, 209, 243);
+    transition: 800ms;
 }
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -49,14 +51,24 @@ main{
     width: 1920px;
 }
 
+h1{
+    font-family: 'Merienda', cursive;
+    position:absolute;
+    top:10px;
+    left: 20px;
+    font-size: 36px;
+    color:black;
+}
+
+
 h2{
     margin:  50px 0px 50px 920px;
 }
 
 #productos{
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(3,350px);
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(3,450px);
     row-gap:40px ;
     column-gap: 40px;
     justify-content: center;

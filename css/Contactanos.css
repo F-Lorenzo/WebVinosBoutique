@@ -3,42 +3,61 @@
 /* -------------------------------------------------------------------------- */
 
 *{
-    margin: 0 auto;
+    margin: 0px ;
+    padding: 0px;
     list-style: none;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    text-decoration:none ;
+    color:black;
+   /* font-family: 'Roboto', sans-serif;
+    font-family: 'Merienda', cursive;*/
 }
 
-body{
-    width: 1920px;
-    height: auto;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
+
 #navegador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: auto;
+    justify-content: flex-end;
+    align-items:center;
     height: 80px;
     box-shadow: 1px 1px 5px black;
 }
 
 #navegador li{
-    width: 384px;
     height: 80px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#navegador li:hover{
-    background-color:#4e4c4c;
-    color: white;
-    transition: 700ms;
+    animation-name: gradiente;
 }
 
+#navegador li:hover{
+    background-color: rgb(174, 209, 243);
+    transition: 800ms;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+
+main{
+
+}
+
+h1{
+    font-family: 'Merienda', cursive;
+    position:absolute;
+    top:10px;
+    left: 20px;
+    font-size: 36px;
+    color:black;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
@@ -49,12 +68,16 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     background-color: rgb(174, 209, 243);
 }
 
 #redes{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between ;
+    align-items: center;
+    width: 300px;
+}
+
+#redes li{
+    margin: 0xp 15px;
 }
