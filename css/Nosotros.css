@@ -94,11 +94,23 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(174, 209, 243);
+    background-color: rgb(32, 32, 32);
+    color: white;
 }
 
 #redes{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between ;
+    align-items: center;
+    width: 300px;
+    color: white;
+
+}
+
+#redes li{
+    margin: 0xp 15px;
+}
+
+footer a,footer h3{
+    color: white;
 }

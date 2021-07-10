@@ -47,7 +47,13 @@
 /* -------------------------------------------------------------------------- */
 
 main{
-
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
 }
 
 h1{
@@ -59,6 +65,36 @@ h1{
     color:black;
 }
 
+h2{
+    font-family: 'Merienda', cursive;
+    margin: 50px 0px;
+}
+
+.containerForm{
+    width: 1920px;
+    height: 850px;
+    background-image: url("../img/bannerContacto.jpg");
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 100px; 
+}
+
+input,textarea{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
@@ -68,7 +104,8 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(174, 209, 243);
+    background-color: rgb(32, 32, 32);
+    color: white;
 }
 
 #redes{
@@ -76,8 +113,14 @@ footer{
     justify-content:space-between ;
     align-items: center;
     width: 300px;
+    color: white;
+
 }
 
 #redes li{
     margin: 0xp 15px;
+}
+
+footer a,footer h3{
+    color: white;
 }
