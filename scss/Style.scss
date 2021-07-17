@@ -98,30 +98,46 @@ h2{
         #espumante{
             background-image: url("../img/espumante.jpg");
         }
-        #serviciosConteiner{
-            display: flex;
-            flex-direction: row;
-            align-items:center ;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background-image: url("../img/servicios-background.jpg");
-            background-repeat: no-repeat;
-            width: 1920px;
-            height: 500px;
-            .tarjetaServicios{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                width: 300px;
-                height: 350px;
-                box-shadow: 1px 1px 5px black;
-                margin: 0px 20px;
-                background-color: white;
+        
+        }
+    }    
+#serviciosConteiner{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("../img/servicios-background.jpg");
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 500px;
+    .tarjetaServicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 350px;
+        box-shadow: 1px 1px 5px black;
+        margin: 0px 20px;
+        background-color: white;
+        ul{
+            margin: 40px;
+            li{
+                margin: 10px;
             }
         }
-    } 
+        button{
+            width: 200px;
+            height: 30px;
+            background-color: orangered;
+            a{
+                color: white;
+            }
+        }
+    }
+    
 }
 
 /* -------------------------------------------------------------------------- */

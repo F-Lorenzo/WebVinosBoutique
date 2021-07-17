@@ -81,27 +81,38 @@ h2 {
       background-image: url("../img/tinto.jpg"); }
     .mainIndex #tarjetaConteiner #espumante {
       background-image: url("../img/espumante.jpg"); }
-    .mainIndex #tarjetaConteiner #serviciosConteiner {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      background-image: url("../img/servicios-background.jpg");
-      background-repeat: no-repeat;
-      width: 1920px;
-      height: 500px; }
-      .mainIndex #tarjetaConteiner #serviciosConteiner .tarjetaServicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 300px;
-        height: 350px;
-        box-shadow: 1px 1px 5px black;
-        margin: 0px 20px;
-        background-color: white; }
+
+#serviciosConteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url("../img/servicios-background.jpg");
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 500px; }
+  #serviciosConteiner .tarjetaServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 350px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0px 20px;
+    background-color: white; }
+    #serviciosConteiner .tarjetaServicios ul {
+      margin: 40px; }
+      #serviciosConteiner .tarjetaServicios ul li {
+        margin: 10px; }
+    #serviciosConteiner .tarjetaServicios button {
+      width: 200px;
+      height: 30px;
+      background-color: orangered; }
+      #serviciosConteiner .tarjetaServicios button a {
+        color: white; }
 
 /* -------------------------------------------------------------------------- */
 /*                                    main Nosotros                           */
