@@ -42,7 +42,7 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                    main                                    */
+/*                                    main SyS                                */
 /* -------------------------------------------------------------------------- */
 
 main{
@@ -77,7 +77,7 @@ h2{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(32, 32, 32);
     color: white;

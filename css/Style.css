@@ -11,7 +11,19 @@
    /* font-family: 'Roboto', sans-serif;
     font-family: 'Merienda', cursive;*/
 }
+h1{
+    font-family: 'Merienda', cursive;
+    position:absolute;
+    top:10px;
+    left: 20px;
+    font-size: 36px;
+    color:black;
+}
 
+h2{
+    font-family: 'Merienda', cursive;
+    margin: 50px 0px;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
@@ -43,10 +55,10 @@
 
 
 /* -------------------------------------------------------------------------- */
-/*                                    main                                    */
+/*                                    main index                              */
 /* -------------------------------------------------------------------------- */
 
-main{
+.mainIndex{
     font-family: 'Roboto', sans-serif;
     width: 1920px;
     display: flex;
@@ -56,19 +68,7 @@ main{
     margin-bottom: 100px;  
 }
 
-h1{
-    font-family: 'Merienda', cursive;
-    position:absolute;
-    top:10px;
-    left: 20px;
-    font-size: 36px;
-    color:black;
-}
 
-h2{
-    font-family: 'Merienda', cursive;
-    margin: 50px 0px;
-}
 
 #tarjetaConteiner{
     display: flex;
@@ -108,17 +108,18 @@ h2{
 
 .tarjeta:hover{
     transform: scale(1.1,1.1);
-    transition: 1s;
+    transition: 1s;;
 }
 
 #serviciosConteiner{
     display: flex;
     flex-direction: row;
     align-items:center ;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-image: url("../img/servicios-background.jpg");
     background-repeat: no-repeat;
-    width:1920px;
+    width: 1920px;
     height: 500px;
 }
 
@@ -134,6 +135,144 @@ h2{
     background-color: white;
 }
 
+.tarjetaServicios ul{
+    margin: 40px ;
+}
+
+.tarjetaServicios ul li{
+    margin: 10px;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: brown;
+}
+
+button a{
+    color: white;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    main Nosotros                           */
+/* -------------------------------------------------------------------------- */
+.mainNosotros{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+ 
+}
+
+.imagen{
+    width: 960px;
+    height: 850px;
+}
+
+.contenido{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido p{
+    width: 900px;
+    height: auto;
+    margin: 30px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                    main Tienda                             */
+/* -------------------------------------------------------------------------- */
+
+.mainTienda{
+    width: 1920px;
+}
+
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(3,450px);
+    row-gap:40px ;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.tarjetaProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 10px black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                main contactanos                            */
+/* -------------------------------------------------------------------------- */
+
+.mainContactanos{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+.containerForm{
+    width: 1920px;
+    height: 850px;
+    background-image: url("../img/bannerContacto.jpg");
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 100px; 
+}
+
+input,textarea{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+
+}
+#nombre,#apellido{
+    width: 700px;
+}
+
+#sumbitBoton{
+    width: 300px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main SyS                                */
+/* -------------------------------------------------------------------------- */
+
+.mainSyS{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;  
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
@@ -142,7 +281,7 @@ h2{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(32, 32, 32);
     color: white;

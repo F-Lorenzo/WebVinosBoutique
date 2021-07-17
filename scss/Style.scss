@@ -1,0 +1,257 @@
+/* -------------------------------------------------------------------------- */
+/*                                   general                                  */
+/* -------------------------------------------------------------------------- */
+
+*{
+    margin: 0px ;
+    padding: 0px;
+    list-style: none;
+    text-decoration:none ;
+    color:black;
+}
+h1{
+    font-family: 'Merienda', cursive;
+    position:absolute;
+    top:10px;
+    left: 20px;
+    font-size: 36px;
+    color:black;
+}
+
+h2{
+    font-family: 'Merienda', cursive;
+    margin: 50px 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+#navegador{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: 80px;
+    box-shadow: 1px 1px 5px black;
+    li{
+        height: 80px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: gradiente;
+    }
+    li:hover{
+        background-color: rgb(174, 209, 243);
+        transition: 800ms;
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    main index                              */
+/* -------------------------------------------------------------------------- */
+
+.mainIndex{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px; 
+    #tarjetaConteiner{
+        display: flex;
+        align-items:center ;
+        justify-content: space-around;
+        .tarjeta{
+            font-family: 'Merienda', cursive;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 350px;
+            box-shadow: 1px 1px 5px black;
+            margin: 0px 20px;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+        .tarjeta:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+        #sys{
+            background-image: url("../img/SyS.jpg");
+        }
+        #blanco{
+            background-image: url("../img/blanco.jpg");
+        }
+        #tinto{
+            background-image: url("../img/tinto.jpg");
+        }
+        #espumante{
+            background-image: url("../img/espumante.jpg");
+        }
+        #serviciosConteiner{
+            display: flex;
+            flex-direction: row;
+            align-items:center ;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url("../img/servicios-background.jpg");
+            background-repeat: no-repeat;
+            width: 1920px;
+            height: 500px;
+            .tarjetaServicios{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 300px;
+                height: 350px;
+                box-shadow: 1px 1px 5px black;
+                margin: 0px 20px;
+                background-color: white;
+            }
+        }
+    } 
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main Nosotros                           */
+/* -------------------------------------------------------------------------- */
+.mainNosotros{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .imagen{
+        width: 960px;
+        height: 850px;
+    }
+    .contenido{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            width: 900px;
+            height: auto;
+            margin: 30px;
+        }
+    }
+ 
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main Tienda                             */
+/* -------------------------------------------------------------------------- */
+
+.mainTienda{
+    width: 1920px;
+    #productos{
+        display: grid;
+        grid-template-columns: repeat(3,400px);
+        grid-template-rows: repeat(3,450px);
+        row-gap:40px ;
+        column-gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 100px;
+        .tarjetaProductos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 1px 1px 10px black;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                main contactanos                            */
+/* -------------------------------------------------------------------------- */
+
+.mainContactanos{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .containerForm{
+        width: 1920px;
+        height: 850px;
+        background-image: url("../img/bannerContacto.jpg");
+        text-align: center;
+        form{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            margin-top: 100px; 
+            input,textarea{
+                margin: 20px;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: rgb(32, 32, 32);
+                color: white;
+            
+            }
+        }
+       
+    }
+  
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main SyS                                */
+/* -------------------------------------------------------------------------- */
+
+.mainSyS{
+    font-family: 'Roboto', sans-serif;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;  
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    #redes{
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        width: 300px;
+        color: white;
+        li{
+            margin: 0xp 15px;
+        }
+    
+    }
+    a,h3{
+        color: white;
+    }
+}
