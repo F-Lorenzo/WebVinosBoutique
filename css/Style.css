@@ -14,6 +14,9 @@ h2 {
   font-family: 'Merienda', cursive;
   margin: 50px 0px; }
 
+img {
+  width: 100%; }
+
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
@@ -34,24 +37,25 @@ nav #navegador {
   justify-content: flex-end;
   align-items: center;
   height: 100px;
-  width: 1920px;
+  width: 100%;
   background-color: #550027; }
   nav #navegador li {
     height: 40px;
     width: 150px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     position: relative; }
     nav #navegador li a {
-      color: #ffffff;
+      color: white;
       font-size: 16px;
       font-weight: bold;
       text-transform: uppercase; }
   nav #navegador li:after {
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    background-color: white;
     height: 20px;
     width: 0;
     left: 0;
@@ -73,13 +77,16 @@ nav #navegador {
   .mainIndex #tarjetaConteiner {
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap; }
     .mainIndex #tarjetaConteiner .tarjeta {
       font-family: 'Merienda', cursive;
       font-size: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       width: 300px;
       height: 350px;
       box-shadow: 1px 1px 5px black;
@@ -107,7 +114,7 @@ nav #navegador {
   justify-content: space-evenly;
   background-image: url("../img/servicios-background.jpg");
   background-repeat: no-repeat;
-  width: 1920px;
+  width: 100%;
   height: 500px; }
   #serviciosConteiner .tarjetaServicios {
     display: flex;
@@ -230,7 +237,7 @@ footer {
   align-items: center;
   background-color: #550027;
   color: white;
-  width: 1920px; }
+  width: 100%; }
   footer #redes {
     display: flex;
     justify-content: space-between;
