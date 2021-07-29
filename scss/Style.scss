@@ -3,13 +3,14 @@
 /* -------------------------------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-$color-primario:#550027;
+$color-primario: #550027;
 $color-secundario: black;
 $color-terciario: white;
 
 $roboto:'Roboto Condensed', sans-serif;
-$merienda:'Merienda', cursive;
+$robotoP: 'Roboto', sans-serif;
 
 
 
@@ -23,7 +24,7 @@ $merienda:'Merienda', cursive;
 }
 
 h2{
-    font-family: 'Merienda', cursive;
+    font-family:$roboto;
     margin: 50px 0px;
 }
 
@@ -106,7 +107,7 @@ nav{
         width: 100%;
         flex-wrap: wrap;
         .tarjeta{
-            font-family: 'Merienda', cursive;
+            font-family:$roboto;
             font-size: 30px;
             display: flex;
             justify-content: center;
@@ -156,11 +157,13 @@ nav{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin:20px;
         width: 300px;
         height: 350px;
+        font-weight: bold;
         box-shadow: 1px 1px 5px black;
         margin: 0px 20px;
-        background-color: white;
+        background-color: rgba(255,255,255,0.85);
         ul{
             margin: 40px;
             li{
@@ -170,9 +173,17 @@ nav{
         button{
             width: 200px;
             height: 30px;
-            background-color: orangered;
+            background-color: $color-primario;
             a{
                 color: white;
+               
+            }
+        }
+        button:hover{
+            background-color:rgba(255,255,255,0.85);
+            transition:800ms;
+            a:hover{
+                color:$color-primario;
             }
         }
     }
@@ -183,8 +194,8 @@ nav{
 /*                                    main Nosotros                           */
 /* -------------------------------------------------------------------------- */
 .mainNosotros{
-    font-family: 'Roboto', sans-serif;
-    width: 1920px;
+    font-family: $roboto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,10 +209,15 @@ nav{
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        p{
-            width: 900px;
+        width:960px;
+        p{         
             height: auto;
-            margin: 30px;
+            margin: 20px;
+            font-family: $robotoP;
+            a{
+                color: $color-primario;
+                font-weight: bold;
+            }
         }
     }
  
@@ -212,14 +228,14 @@ nav{
 /* -------------------------------------------------------------------------- */
 
 .mainTienda{
-    width: 1920px;
+    width: 100%;
     h2{
       margin-left: 920px;  
     }
     #productos{
         display: grid;
         grid-template-columns: repeat(3,400px);
-        grid-template-rows: repeat(3,450px);
+        grid-template-rows: repeat(3,550px);
         row-gap:40px ;
         column-gap: 40px;
         flex-wrap: wrap;
@@ -233,6 +249,23 @@ nav{
             width: 100%;
             height: 100%;
             box-shadow: 1px 1px 10px black;
+            span{
+                margin:10px;
+                font-family: $roboto;
+            }
+            button{
+                width: 200px;
+                height: 30px;
+                background-color: $color-primario;
+                 color: white;
+                 font-family: $roboto;
+            }
+            button:hover{
+                background-color:rgba(255,255,255,0.85);
+                transition:800ms;
+                color:$color-primario;
+                font-family: $roboto;
+            }
         }
     }
 }
@@ -242,14 +275,14 @@ nav{
 /* -------------------------------------------------------------------------- */
 
 .mainContactanos{
-    font-family: 'Roboto', sans-serif;
-    width: 1920px;
+    font-family: $roboto;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     .containerForm{
-        width: 1920px;
+        width: 100%;
         height: 850px;
         background-image: url("../img/bannerContacto.jpg");
         text-align: center;
@@ -278,13 +311,23 @@ nav{
 /* -------------------------------------------------------------------------- */
 
 .mainSyS{
-    font-family: 'Roboto', sans-serif;
-    width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: $robotoP;
     flex-direction: column;
-    margin-bottom: 100px;  
+    margin-bottom: 100px;
+    .titulo{
+        position: relative;
+        
+    }  
+    h2{
+        font-size: 0px;
+    }
+    p,h3{
+       padding: 20px 200px;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
