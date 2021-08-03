@@ -74,7 +74,8 @@ nav #navegador {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  height: 100%; }
   .mainIndex #tarjetaConteiner {
     display: flex;
     align-items: center;
@@ -116,7 +117,8 @@ nav #navegador {
   background-image: url("../img/servicios-background.jpg");
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px; }
+  height: 100%;
+  padding: 20px; }
   #serviciosConteiner .tarjetaServicios {
     display: flex;
     flex-direction: column;
@@ -179,16 +181,15 @@ nav #navegador {
 .mainTienda {
   width: 100%; }
   .mainTienda h2 {
-    margin-left: 920px; }
+    margin-left: 48%; }
   .mainTienda #productos {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(3, 550px);
     row-gap: 40px;
     column-gap: 40px;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 100px; }
+    margin-bottom: 30%; }
     .mainTienda #productos .tarjetaProductos {
       display: flex;
       flex-direction: column;
@@ -211,6 +212,14 @@ nav #navegador {
         transition: 800ms;
         color: #550027;
         font-family: "Roboto Condensed", sans-serif; }
+
+@media screen and (max-width: 600px) {
+  #productos {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(1, 550px);
+    row-gap: 40px;
+    column-gap: 40px; } }
 
 /* -------------------------------------------------------------------------- */
 /*                                main contactanos                            */
@@ -280,3 +289,9 @@ footer {
       margin: 0xp 15px; }
   footer a, footer h3 {
     color: white; }
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column-reverse;
+    height: 300px;
+    margin: 10px 0px; } }
