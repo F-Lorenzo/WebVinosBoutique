@@ -37,56 +37,169 @@ img{
 /* -------------------------------------------------------------------------- */
 
 
-nav{
-    h1{
-        font-size: 0px;
-        width: 200px;
-        height: 80px;
-        background-repeat: no-repeat;
-        background-image: url("../img/Logo.png");
-        position: absolute;
-        left: 50px;
-        top: 10px;
-    }
-    #navegador{
-    font-family:'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-    height: 100px;
+header {
+    background: $color-primario;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
     width: 100%;
-    background-color:$color-primario;
-    li{
-        height: 40px;
-        width: 150px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        position: relative;
-        a{
-            color:$color-terciario;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        }    
-    li:after{
-        content: "";
-        position: absolute;
-        background-color: $color-terciario;
-        height: 20px;
-        width:0;
-        left: 0;
-        bottom: -25px;
-        transition: 0.7s;
+    height:100px
+  }
+
+  .logo {
+      font-size: 0px;
+      height:80px;
+      width:200px;
+      background-image: url(../img/logo.png);
+  }
+
+  .checkbox {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  
+  .checkbox:focus ~ .checkbox {
+    outline: 3px solid rgba(lightblue, .75);
+  }
+  
+  .navLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLabel span,
+  .navLabel span::before,
+  .navLabel span::after {
+    display: block;
+    background: $color-terciario;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .navLabel span::before,
+  .navLabel span::after {
+    content: '';
+    position: absolute;
+  }
+  
+  .navLabel span::before {
+    bottom: 7px;
+  }
+  
+  .navLabel span::after {
+    top: 7px;
+  }
+  
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: $color-primario;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: $roboto;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+    
+  .checkbox:checked ~ nav {
+    transform: scale(1,1);
+  }
+  
+  .checkbox:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .navLabel {
+      display: none;
     }
-    li:hover:after{
-        width: 100%;
+  
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    
+    .logo {
+      
     }
-}   
+    
+    nav {
+      position: relative;
+      text-align: left;
+      transition: none;
+      transform: scale(1,1);
+      background: none;
+      top: initial;
+      left: initial;      
+      grid-column: 3 / 4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    nav ul {
+      display: flex;
+    }
+    
+    nav li {
+      margin-left: 3em;
+      margin-bottom: 0;
+    }
+    
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+    
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background: black;
+      position: absolute;
+      top: -.75em;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+      transform: scale(1,1);
+    }
+  }
 
 
 /* -------------------------------------------------------------------------- */
