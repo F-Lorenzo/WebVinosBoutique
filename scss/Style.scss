@@ -151,10 +151,6 @@ header {
       align-items: center;
     }
     
-    .logo {
-      
-    }
-    
     nav {
       position: relative;
       text-align: left;
@@ -187,9 +183,9 @@ header {
       content: '';
       display: block;
       height: 5px;
-      background: black;
+      background:white;
       position: absolute;
-      top: -.75em;
+      top: 1.5em;
       left: 0;
       right: 0;
       transform: scale(0, 1);
@@ -347,6 +343,12 @@ header {
 
 .mainTienda{
     width: 100%;
+    .portada{
+      width: 100%;
+      img{
+        width:100%;
+      }
+    }
     h2{
       margin-left: 48%;  
     }
@@ -387,13 +389,12 @@ header {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #productos{
-        display: grid;
-        grid-template-columns: repeat(1,400px);
-        grid-template-rows: repeat(1,550px);
-        row-gap:40px ;
-        column-gap: 40px;
+        display: flex !important;
+        justify-content:center;
+        align-items: center;
+        flex-direction:column !important; 
     }
 }
 
@@ -420,6 +421,7 @@ header {
             flex-direction: column;
             margin-top: 100px; 
             input,textarea{
+                width: 600px;
                 margin: 20px;
                 border-radius: 10px;
                 padding: 10px;
@@ -431,6 +433,13 @@ header {
        
     }
   
+}
+
+@media screen and (max-width: 700px)  {
+  input,textarea{
+      width:100% !important;
+      margin:10px;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -454,6 +463,14 @@ header {
     }
     p,h3{
        padding: 20px 200px;
+    }
+}
+
+@media screen and  (max-width: 700px){
+    .mainSyS{
+      p,h3{
+        padding: 20px 5px;
+     }
     }
 }
 

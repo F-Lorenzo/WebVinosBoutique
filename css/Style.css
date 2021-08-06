@@ -140,9 +140,9 @@ nav a {
     content: '';
     display: block;
     height: 5px;
-    background: black;
+    background: white;
     position: absolute;
-    top: -.75em;
+    top: 1.5em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -265,6 +265,10 @@ nav a {
 /* -------------------------------------------------------------------------- */
 .mainTienda {
   width: 100%; }
+  .mainTienda .portada {
+    width: 100%; }
+    .mainTienda .portada img {
+      width: 100%; }
   .mainTienda h2 {
     margin-left: 48%; }
   .mainTienda #productos {
@@ -298,13 +302,12 @@ nav a {
         color: #550027;
         font-family: "Roboto Condensed", sans-serif; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #productos {
-    display: grid;
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(1, 550px);
-    row-gap: 40px;
-    column-gap: 40px; } }
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important; } }
 
 /* -------------------------------------------------------------------------- */
 /*                                main contactanos                            */
@@ -328,11 +331,17 @@ nav a {
       flex-direction: column;
       margin-top: 100px; }
       .mainContactanos .containerForm form input, .mainContactanos .containerForm form textarea {
+        width: 600px;
         margin: 20px;
         border-radius: 10px;
         padding: 10px;
         background-color: #202020;
         color: white; }
+
+@media screen and (max-width: 700px) {
+  input, textarea {
+    width: 100% !important;
+    margin: 10px; } }
 
 /* -------------------------------------------------------------------------- */
 /*                                    main SyS                                */
@@ -351,6 +360,10 @@ nav a {
     font-size: 0px; }
   .mainSyS p, .mainSyS h3 {
     padding: 20px 200px; }
+
+@media screen and (max-width: 700px) {
+  .mainSyS p, .mainSyS h3 {
+    padding: 20px 5px; } }
 
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
